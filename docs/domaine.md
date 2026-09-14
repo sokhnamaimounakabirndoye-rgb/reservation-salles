@@ -36,3 +36,15 @@ Salle et Reservation sont déclarées final car le domaine ne prévoit pas de so
 ## Types métier
 
 TypeSalle et StatutReservation sont représentés sous forme d'enum.
+
+
+## Données en mémoire
+
+Les premières salles sont stockées temporairement en mémoire dans une
+collection `List<Salle>` utilisant une `ArrayList`.
+
+Cette collection est utilisée uniquement pour la démonstration du domaine.
+Aucune base de données ni JDBC n'est utilisé à ce stade.
+
+Les salles sont parcourues avec une boucle `for` classique.
+Les Streams Java ne sont pas utilisés dans cet incrément.
